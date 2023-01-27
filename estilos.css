@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/07/8-Bit-Images-HD.png);
+    height: fit-content;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo {
+    color: khaki;
+    font-size: 40px;
+    margin: 80px;
+}
+
+.subtitulo{
+    color: #FFFFE8;
+    margin-bottom: 50px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+    margin: 60px 0px;
+}
+
+.tarjeta-de-mokepon {
+    width: 160px;
+    height: 160px;
+    background: transparent;
+    border: solid;
+    color: #1DB9C3;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#name{
+    color: #1DB9C3;
+}
+
+.tarjeta-de-mokepon img {
+    width: 105px;
+    margin: auto;
+    display: flex;
+}
+
+#boton-agua, #boton-fuego,#boton-tierra {
+    font-family: 'Press Start 2P', cursive;
+    
+    border-radius: 20px;
+    background: transparent;
+    width: 170px;
+    height: 60px;
+    border: 2px solid;
+    margin: 30px;
+    background-color: transparent;
+    color: #1DB9C3;
+}
+
+input {
+    display: none
+} 
+
+input:checked + label,input:hover + label {
+    background-color: #FFFFE8 ;
+    transition-duration: 250ms;
+}
+
+#boton-mascota {
+    font-family: 'Press Start 2P', cursive;
+    
+    border-radius: 20px;
+    background: transparent;
+    width: 170px;
+    height: 60px;
+    border: 2px solid;
+    margin: 30px;
+    background-color: transparent;
+    color: #1DB9C3;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+#mensajes {
+    border-radius: 20px;
+    margin: 76px;
+    background: transparent;
+    color: #1DB9C3;
+    
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFE8;
+}
+
+.scoreboard{
+    display: flex;
+	gap: 90px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 30px;
+    color: #93FFD8;
+}
+
+#mascota-jugador,#mascota-enemigo{
+    font-size: 20px;
+    color: #93FFD8;
+}
+
+.ataque-jugador,.ataque-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 250px;
+    height:fit-content;
+    background: transparent;
+    color: #93FFD8;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#reiniciar {
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    color: #1DB9C3;
+    border: solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width:360px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+}
+

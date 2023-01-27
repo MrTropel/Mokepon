@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8 " />
+        <title>MOKEPON!</title>
+        <script src="./js/mokepon.js"></script>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>        
+        <section id="seleccionar-mascota">             
+            <h1 class="titulo">MOKEPON!</h1>           
+            <h2 class="subtitulo">Selecciona tu mascota</h2>
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="hipodoge"/>
+                <label class="tarjeta-de-mokepon" for="hipodoge">
+                    <p id="name">Hipodoge</p>
+                    <img src="./assets/HIPODOGE.png" alt="Hipodoge">
+                </label>    
+                <input type="radio" name="mascota" id="capipepo"/>
+                <label class="tarjeta-de-mokepon" for="capipepo">
+                    <p id="name">Capipepo</p>
+                    <img src="./assets/CAPIPEPO.png" alt="Capipepo">
+                </label>
+                <input type="radio" name="mascota" id="ratigueya"/>
+                <label class="tarjeta-de-mokepon" for="ratigueya">
+                    <p id="name">Ratigueya</p>
+                    <img src="./assets/RATIGUEYA.png" alt="Ratigueya">
+                </label>
+            </div>
+                <button id="boton-mascota">SELECCIONAR</button>
+        </section>
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">MOKEPON!</h1>
+            <h2 class="subtitulo">Selecciona tu ataque</h2>
+            <div>
+                <button id="boton-fuego"> Fuego🔥</button>
+                <button id="boton-agua"> Agua💧 </button>
+                <button id="boton-tierra"> Tierra🌱 </button>
+            </div>
+            <div id="mensajes">
+                <p id="resultado">Que gane el mejor!</p>
+                <section id="reiniciar">
+                    <button id="reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            <div class="scoreboard">
+                <div class="ataque-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-jugador"></div>
+                </div>
+                <div class="ataque-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-enemigo"></div>
+                </div>
+            </div>           
+        </section>
+    </body>
+</html>
