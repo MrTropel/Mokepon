@@ -63,6 +63,15 @@ body{
     margin: 30px;
     background-color: transparent;
     color: #1DB9C3;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-ataques{
+    display: flex;
 }
 
 input {
@@ -152,7 +161,7 @@ input:checked + label,input:hover + label {
     font-family: 'Press Start 2P', cursive;
 }
 
-@media (max-width:360px) {
+@media (max-width:500px) {
     .tarjetas {
         flex-direction: column;
     }
